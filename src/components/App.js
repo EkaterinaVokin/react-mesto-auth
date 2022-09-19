@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { Header } from './Header.js';
 import { Main } from './Main.js';
 import { Footer } from './Footer.js';
@@ -26,6 +27,8 @@ function App() {
     name: '',
     about: '',
   }); // пер.состояния текущего пользователя
+
+  const [isLoggedIn,setIsLoggedIn] = useState(false);
 
   // обработчик который открывает попап с картинкой и получает эту карточку
   const handleCardClick = (card) => {
@@ -226,6 +229,17 @@ function App() {
         card={selectedCard}
         onClose={closeAllPopups}
       /> 
+      <Switch>
+        <Route path='/sign-up'> // регистрация
+
+        </Route>
+        <Route path='/sign-in'> // авторизация
+
+        </Route>
+        <Route exact path='/'>
+          {isLoggedIn ? <span></span> : <Redirect to='/sign-in'/>}
+        </Route>
+      </Switch>
     </CurrentUserContext.Provider>
   );
 }
