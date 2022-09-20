@@ -68,6 +68,9 @@
 @import url(./blocks/popup/__tooltip/popup__tooltip.css);
 @import url(./blocks/popup/__tooltip-signature/popup__tooltip-signature.css);
 @import url(./blocks/popup/__tooltip-item/popup__tooltip-item.css);
+/* Подключение блока nav-link */
+@import url(./blocks/nav-link/nav-link.css);
+@import url(./blocks/nav-link/_size/nav-link_size_big.css);
 
 /* body {
   margin: 0;
