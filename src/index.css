@@ -68,6 +68,15 @@
 @import url(./blocks/popup/__tooltip/popup__tooltip.css);
 @import url(./blocks/popup/__tooltip-signature/popup__tooltip-signature.css);
 @import url(./blocks/popup/__tooltip-item/popup__tooltip-item.css);
+/* Подключение блока auth */
+@import url(./blocks/auth/__container/auth__container.css);
+@import url(./blocks/auth/__container/_margin/auth__container_margin_bottom.css);
+@import url(./blocks/auth/__block/auth__block.css);
+@import url(./blocks/auth/__title/auth__title.css);
+@import url(./blocks/auth/__input/auth__input.css);
+@import url(./blocks/auth/__error/auth__error.css);
+@import url(./blocks/auth/__button/auth__button.css);
+@import url(./blocks/auth/__footer/auth__footer.css);
 /* Подключение блока nav-link */
 @import url(./blocks/nav-link/nav-link.css);
 @import url(./blocks/nav-link/_size/nav-link_size_big.css);
