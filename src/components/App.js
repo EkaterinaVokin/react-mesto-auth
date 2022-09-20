@@ -247,12 +247,9 @@ function App() {
         <Route path='/sign-in'> // авторизация
           <Login/>
         </Route>
-        <ProtectedRoute
-          path="/"
-          isLoggedIn={isLoggedIn}
-          exact={true}
-          component={Landing}
-        />
+        <ProtectedRoute path="/" isLoggedIn={isLoggedIn}>
+          <Profile setIsLoggedIn={setIsLoggedIn} />
+        </ProtectedRoute>
       </Switch>
     </CurrentUserContext.Provider>
   );
