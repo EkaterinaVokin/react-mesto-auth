@@ -63,7 +63,9 @@
 @import url(./blocks/popup/__image/popup__image.css);
 @import url(./blocks/popup/__image-item/popup__image-item.css);
 @import url(./blocks/popup/__signature/popup__signature.css);
-
+@import url(./blocks/popup/__tooltip/popup__tooltip.css);
+@import url(./blocks/popup/__tooltip-signature/popup__tooltip-signature.css);
+@import url(./blocks/popup/__tooltip-item/popup__tooltip-item.css);
 
 /* body {
   margin: 0;
