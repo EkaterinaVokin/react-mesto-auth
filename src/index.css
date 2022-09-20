@@ -50,6 +50,7 @@
 @import url(./blocks/popup/_type/popup_type_image.css);
 @import url(./blocks/popup/__container/popup__container.css);
 @import url(./blocks/popup/__container/_dynamic/popup__container_dynamic_width.css);
+@import url(./blocks/popup/__container/_type/popup__container_type_tooltip.css);
 @import url(./blocks/popup/__button-close/popup__button-close.css);
 @import url(./blocks/popup/__close/popup__close.css);
 @import url(./blocks/popup/__title/popup__title.css);
@@ -80,6 +81,8 @@
 /* Подключение блока nav-link */
 @import url(./blocks/nav-link/nav-link.css);
 @import url(./blocks/nav-link/_size/nav-link_size_big.css);
+/* profile-info */
+@import url(./blocks/profile-info/profile-info.css);
 
 /* body {
   margin: 0;
