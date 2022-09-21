@@ -9,8 +9,13 @@ import { Footer } from './Footer.js';
 import { ImagePopup } from './ImagePopup.js';
 import { api } from '../utils/Api';
 import { CurrentUserContext } from '../contexts/CurrentUserContext.js';
+import { useHistory } from 'react-router-dom';
 
-export function Landing() {
+export function Profile(props) {
+  
+  const history = useHistory(); 
+
+  const {email,onLogout} = props;
 
   const [isEditProfilePopupOpen, setEditProfilePopupOpen] = useState(false); //пер.состояния открыть попап 'редактировать профиль'
   const [isAddPlacePopupOpen, setAddPlacePopupOpen] = useState(false); // пер.состояния открыть попап 'новое место'
@@ -23,6 +28,7 @@ export function Landing() {
 
   const [isLoading, setIsLoading] = useState(false); // пер.состояния загрузки
 
+  
   // const [currentUser, setCurrentUser] = useState({
   //   name: '',
   //   about: '',
@@ -55,6 +61,7 @@ export function Landing() {
     setRemovedCard(card);
   }
 
+
   // обработчик закрытие попапов
   const closeAllPopups = () => {
     setEditAvatarPopupOpen(false);
@@ -80,7 +87,7 @@ export function Landing() {
         document.removeEventListener('keydown', closeByEscape);
       }
     }
-  }, [isOpen]) 
+  }, [isOpen])
 
 
   React.useEffect(() => {
@@ -188,7 +195,14 @@ export function Landing() {
 
   return (
     <>
-    <Header />
+    <Header
+      actions={
+        <>
+          <span className="profile-info">{email}</span>
+          <button className="nav-link nav-link_size_big" type="button" onClick={onLogout}>Выйти</button>
+        </>
+      }
+    />
       <Main
         onEditAvatar={handleEditAvatarClick}
         onEditProfile={handleEditProfileClick}
