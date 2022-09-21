@@ -3,7 +3,9 @@ import { Header } from './Header.js';
 import { NavLink } from 'react-router-dom';
 import { AuthForm } from './AuthForm.js';
 
-export function Login() {
+export function Login(props) {
+  const { onSubmit } = props;
+
   return (
     <>
       <Header
@@ -17,6 +19,7 @@ export function Login() {
         title="Вход" 
         name="authorization" 
         buttonText="Войти" 
+        onSubmit={onSubmit}
       />
     </>
   );

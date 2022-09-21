@@ -1,15 +1,10 @@
-import React, { useState, useEffect } from 'react';
 import { Header } from './Header.js';
 import { NavLink } from 'react-router-dom';
 import { AuthForm } from './AuthForm.js';
 
 export function Register(props) {
-  const { onSubmit } = props;
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    onSubmit();
-  }
+  const { onSubmit } = props;
 
   return (
     <>
@@ -24,7 +19,7 @@ export function Register(props) {
         title="Регистрация"
         name="registration"
         buttonText="Зарегистрироваться"
-        onSubmit={handleSubmit}
+        onSubmit={onSubmit}
         footer={
           <span>
             Уже зарегистрированы?{' '}
