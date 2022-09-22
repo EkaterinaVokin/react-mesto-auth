@@ -40,7 +40,7 @@ export function  AuthForm(props) {
     <section className={`auth auth_type_${name}`}>
       <div className="auth__container">
       <h1 className="auth__title">{title}</h1>
-      <form className={`auth__form auth__form_type_${name}`} action="#" name={`auth-${name}`} noValidate onSubmit={handleSubmit}>
+      <form className={`auth__form auth__form_type_${name}`} action="#" name={`auth-${name}`} onSubmit={handleSubmit}>
       <div className="auth__block">
         <input
           className='auth__input auth__input_type_email'
