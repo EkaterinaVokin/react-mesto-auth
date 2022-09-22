@@ -71,7 +71,7 @@ function App() {
   function closeInfoTooltip() {
     setHasInfoTooltip(false);
   }
-
+  
   function handleLogout(){
     localStorage.removeItem('token')
     history.push('sign-in')

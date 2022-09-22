@@ -4,10 +4,7 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-}
-
-@media (max-width: 576px) {
-  .header__burger-menu {
-    display: flex;
-  }
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }

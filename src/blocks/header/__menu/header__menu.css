@@ -9,14 +9,3 @@
     margin-right: 18px;
   }
 }
-
-@media (max-width: 576px) {
-  .header__menu {
-    top: 100%;
-    left: 0;
-    width: 100%;
-    display: none;
-    margin: 0;
-    order: -1;
-  }
-}

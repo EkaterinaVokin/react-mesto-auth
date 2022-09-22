@@ -22,6 +22,7 @@
 @import url(./blocks/header/__controls/header__controls.css);
 @import url(./blocks/header/__data/header__data.css);
 @import url(./blocks/header/__menu/_mobile-opened/header__menu_mobile-opened.css);
+@import url(./blocks/header/_menu/header_menu.css);
 /* Подключила блок profile */
 @import url(./blocks/profile/profile.css);
 @import url(./blocks/profile/__avatar-wrapper/profile__avatar-wrapper.css);

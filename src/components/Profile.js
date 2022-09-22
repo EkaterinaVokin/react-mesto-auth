@@ -9,13 +9,11 @@ import { Footer } from './Footer.js';
 import { ImagePopup } from './ImagePopup.js';
 import { api } from '../utils/Api';
 import { CurrentUserContext } from '../contexts/CurrentUserContext.js';
-import { useHistory } from 'react-router-dom';
+
 
 
 export function Profile(props) {
   
-  const history = useHistory(); 
-
   const {email,onLogout} = props;
 
   const [isEditProfilePopupOpen, setEditProfilePopupOpen] = useState(false); //пер.состояния открыть попап 'редактировать профиль'
@@ -197,6 +195,7 @@ export function Profile(props) {
   return (
     <>
     <Header
+      hasMenu={true}
       actions={
         <>
           <span className="profile-info">{email}</span>
