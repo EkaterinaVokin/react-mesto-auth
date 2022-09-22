@@ -11,6 +11,7 @@ import { api } from '../utils/Api';
 import { CurrentUserContext } from '../contexts/CurrentUserContext.js';
 import { useHistory } from 'react-router-dom';
 
+
 export function Profile(props) {
   
   const history = useHistory(); 
@@ -199,7 +200,7 @@ export function Profile(props) {
       actions={
         <>
           <span className="profile-info">{email}</span>
-          <button className="nav-link nav-link_size_big" type="button" onClick={onLogout}>Выйти</button>
+          <button className="nav-link nav-link_size_big nav-link_color_info" type="button" onClick={onLogout}>Выйти</button>
         </>
       }
     />
