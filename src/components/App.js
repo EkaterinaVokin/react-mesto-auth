@@ -44,7 +44,7 @@ function App() {
         }
       })
       .catch((err) => {
-        return Promise.reject('Ошибка: Нет токена');
+        setHasInfoTooltip(true); // открывает тултип
       });
   }
 
