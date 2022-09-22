@@ -21,6 +21,26 @@ function App() {
 
   const history = useHistory();
 
+  useEffect(() => {
+    if (stateIsLogin.isLoggedIn) {
+      api
+        .getUser() // получаем ответ с сервера о текущем пользователе
+        .then((user) => {
+          setCurrentUser(user); //передаем объект о текущем пользователе в переменную состояния
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+      api
+        .getCard() // получаем ответ с сервера массив карточек
+        .then((cards) => {
+          setCards(cards);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }, [stateIsLogin.isLoggedIn]);
   // функция принимает данные пользователя которые он ввел и отправляет на сервер (регестрирует)
   function handleSubmitRegister(dataUser) {
     return register(dataUser.email, dataUser.password)
