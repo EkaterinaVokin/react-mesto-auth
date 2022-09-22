@@ -89,7 +89,7 @@ function App() {
         <Route path="/sign-in">
           <Login onSubmit={handleSubmitLogin}/>
         </Route>
-        <ProtectedRoute path="/" isLoggedIn={stateIsLogin.isLoggedIn}>
+        <ProtectedRoute exact path="/" isLoggedIn={stateIsLogin.isLoggedIn}>
           <Profile email={stateIsLogin.email} onLogout={handleLogout}/>
         </ProtectedRoute>
       </Switch>
