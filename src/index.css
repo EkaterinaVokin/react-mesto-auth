@@ -16,6 +16,12 @@
 @import url(./blocks/header/__link/header__link.css);
 @import url(./blocks/header/__logo/header__logo.css);
 @import url(./blocks/header/__menu/header__menu.css);
+@import url(./blocks/header/__burger-bar/header__burger-bar.css);
+@import url(./blocks/header/__burger-menu/_opened/header__burger-menu_opened.css);
+@import url(./blocks/header/__burger-menu/header__burger-menu.css);
+@import url(./blocks/header/__controls/header__controls.css);
+@import url(./blocks/header/__data/header__data.css);
+@import url(./blocks/header/__menu/_mobile-opened/header__menu_mobile-opened.css);
 /* Подключила блок profile */
 @import url(./blocks/profile/profile.css);
 @import url(./blocks/profile/__avatar-wrapper/profile__avatar-wrapper.css);
@@ -81,19 +87,6 @@
 /* Подключение блока nav-link */
 @import url(./blocks/nav-link/nav-link.css);
 @import url(./blocks/nav-link/_size/nav-link_size_big.css);
-/* profile-info */
+@import url(./blocks/nav-link/_color/nav-link_color_info.css);
+/* Подключение блока profile-info */
 @import url(./blocks/profile-info/profile-info.css);
-
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
