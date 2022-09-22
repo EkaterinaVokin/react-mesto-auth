@@ -72,6 +72,7 @@ function App() {
     setAddPlacePopupOpen(false);
     setSelectedCard(null);
     setRemovedCard(null);
+    setHasInfoTooltip(false);
   };
 
   // Если хоть одно состояние true или не null, то какой-то попап открыт, значит, навешивать нужно обработчик.
