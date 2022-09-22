@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e8e24842.css",
+    "main.js": "/static/js/main.0a125d93.js",
+    "static/js/787.5530211c.chunk.js": "/static/js/787.5530211c.chunk.js",
+    "static/media/Inter-Medium.woff": "/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff": "/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff": "/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2": "/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Black.woff2": "/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2": "/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/logo.svg": "/static/media/logo.1f1e95914acec5e332361dc22eb8f9b2.svg",
+    "static/media/heart.svg": "/static/media/heart.87ed371465c7a6a1cd01.svg",
+    "index.html": "/index.html",
+    "static/media/no.svg": "/static/media/no.df8eddf661ff88f2d0efd3d570d14309.svg",
+    "static/media/btn-remove.svg": "/static/media/btn-remove.823b0cf1b0b7e9cb7cad209d1e19258f.svg",
+    "static/media/yes.svg": "/static/media/yes.1b6082f862eac35e2514460237d96ecc.svg",
+    "static/media/heart_black.svg": "/static/media/heart_black.fe17a515669479b1e649.svg",
+    "static/media/close.svg": "/static/media/close.ad98de32e342afafa1187ccb39ed5116.svg",
+    "static/media/button__pen.svg": "/static/media/button__pen.8667ac4a523e8fc42e59641845fc8448.svg",
+    "static/media/vector_avatar.svg": "/static/media/vector_avatar.a086f758840ae814ecdece4799d2cf40.svg",
+    "static/media/button__plus.svg": "/static/media/button__plus.d86bb2edc2f6eadb96b785d29c82b56e.svg",
+    "main.e8e24842.css.map": "/static/css/main.e8e24842.css.map",
+    "main.0a125d93.js.map": "/static/js/main.0a125d93.js.map",
+    "787.5530211c.chunk.js.map": "/static/js/787.5530211c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8e24842.css",
+    "static/js/main.0a125d93.js"
+  ]
+}
