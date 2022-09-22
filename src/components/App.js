@@ -65,7 +65,10 @@ function App() {
           });
           history.push('/');
         }
-      });
+      })
+      .catch(() => {
+        Promise.reject(`Ошибка`)
+      })
   }
 
   function closeInfoTooltip() {
