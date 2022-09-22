@@ -23,15 +23,17 @@ function App() {
 
   // функция принимает данные пользователя которые он ввел и отправляет на сервер (регестрирует)
   function handleSubmitRegister(dataUser) {
-    return register(dataUser.email,dataUser.password)
-      .then((data) =>{ // получаем данные сервера id и email
-        setHasInfoTooltip(true); // открывается тултип
+    return register(dataUser.email, dataUser.password)
+      .then((data) => {
+        // получаем данные сервера id и email
         setIsError(false); // показывает что успешно зарегестрированы
-        history.push('/sign-in') // отправляем пользователя на страницу входа
+        history.push('/sign-in'); // отправляем пользователя на страницу входа
       })
-      .catch((err) =>{
-        setHasInfoTooltip(true); // открывает тултип
+      .catch((err) => {
         setIsError(true); // показывает что произошла ошибка данные не ушли на сервер
+      })
+      .finally(() => {
+        setHasInfoTooltip(true); // открывает тултип
       });
   }
 
