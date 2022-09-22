@@ -10,7 +10,7 @@ export function EditProfilePopup(props) {
 
   const {values,errors,isValid,handleInputChange,resetForm} = useFormValidator();
 
-  const currentUser = useContext(CurrentUserContext); // подписываемся на контекст и получаем значение контекста (объект текущего пользователя)
+  const {currentUser} = useContext(CurrentUserContext); // подписываемся на контекст и получаем значение контекста (объект текущего пользователя)
 
   useEffect(() => { // при открытии попап данные пользователя были записаны в инпутах которые пришли с сервера
     if (isOpen) {

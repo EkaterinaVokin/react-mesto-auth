@@ -8,7 +8,7 @@ import { CurrentUserContext } from '../contexts/CurrentUserContext.js';
 export function Main(props) {
   const { onEditProfile, onAddPlace, onEditAvatar, onCardClick,cards ,onCardLike,onCardDelete} = props;
 
-  const currentUser = useContext(CurrentUserContext); // подписываемся на контекст и получаем значение контекста (объект текущего пользователя)
+  const {currentUser} = useContext(CurrentUserContext); // подписываемся на контекст и получаем значение контекста (объект текущего пользователя)
 
   return (
     <main className="container">
