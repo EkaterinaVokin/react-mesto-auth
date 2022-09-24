@@ -5,11 +5,13 @@ import './index.css';
 import App from './components/App.js';
 import reportWebVitals from './reportWebVitals';
 
+const PUBLIC_URL = process.env.PUBLIC_URL || '/';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   // </React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={PUBLIC_URL}>
       <App />
     </BrowserRouter>
 );
