@@ -5,10 +5,10 @@ import { CurrentUserContext } from '../contexts/CurrentUserContext.js';
 export function Card(props) {
   const { card, onCardClick,onCardLike,onCardDelete} = props; // получаем карточку и обрабчик
 
-  const user = useContext(CurrentUserContext); // подписываемся на контекст и получаем значение контекста (объект текущего пользователя)
+  const {currentUser: user} = useContext(CurrentUserContext); // подписываемся на контекст и получаем значение контекста (объект текущего пользователя)
 
   const isOwn = card.owner._id === user._id; // Определяем, являемся ли мы владельцем текущей карточки
-
+ 
   const isLiked = card.likes.some((like) => {
     // проверяем, есть ли уже лайк на этой карточке
     return like._id === user._id;
